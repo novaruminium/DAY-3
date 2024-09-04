@@ -10,16 +10,14 @@ public class Main {
         //Write a program to calculate the sum of digits in a given number.
         Calculatedigits.calculatedigits();
 
-
         //Create a function to check if a number is prime.
         Prime.prime();
-
 
         //Write a program to ﬁnd the largest element in an array.
         Largestelement.largestNumber();
 
         //Implement a simple calculator that can perform addition, subtraction, multiplication, and division.
-
+        Calculator.calculator();
 
         //Write a function to reverse a string without using built-in reverse functions.
 
