@@ -1,12 +1,8 @@
 package org.example;
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args)
     {
-        Scanner scan = new Scanner(System.in);
-
         //Write a program to calculate the sum of digits in a given number.
         Calculatedigits.calculatedigits();
 
@@ -26,7 +22,7 @@ public class Main {
         Fibonacci.fibonacciSequence();
 
         //Write a function to count the number of vowels in a string.
-
+        Vowel.countVowel();
 
         //Implement a program to sort an array of integers using bubble sort without using built-in methods.
 
