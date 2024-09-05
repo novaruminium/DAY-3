@@ -8,32 +8,32 @@ public class Reverse
     {
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Enter a word to reverse:");
-        String input = scan.nextLine(); // Read the input string
+        System.out.println("Input a word to reverse:");
+        String word = scan.nextLine();
 
-        String reversed = reverseString(input);
-
-        System.out.println("Original: " + input);
-        System.out.println("Reversed: " + reversed);
+        System.out.println("Reversed: " + reverseString(word));
 
         scan.close();
     }
-    private static String reverseString(String str)
-    {
-        char[] charArray = str.toCharArray();
 
-        int left = 0;
-        int right = charArray.length - 1;
+    //I'm trying to make a method where I can re-arrange the word.
+   private static String reverseString(String word)
+   {
+       //Change the String to character using array.
+       char[] charArray = word.toCharArray();
 
-        while (left < right)
-        {
-            char temp = charArray[left];
-            charArray[left] = charArray[right];
-            charArray[right] = temp;
+       //
+       int left = 0;
+       int right = charArray.length - 1;
 
-            left++;
-            right--;
-        }
-        return new String(charArray);
-    }
+       while (left < right) {
+           char temp = charArray[left];
+           charArray[left] = charArray[right];
+           charArray[right] = temp;
+
+           left++;
+           right--;
+       }
+       return new String(charArray);
+   }
 }
